@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/580034968702689281/cxid_lMH.jpg">
+    <link rel="stylesheet" href="../styleWebPage/anketa.css">
+    <title>Anketa</title>
+</head>
+<body>
+        <header>
+            <nav class="navigation-container">
+            <div class="container">
+            <div style="margin:5px">
+                <p>
+                    <span style="color:white"}}>Sos Детские Деревни</span><br/>
+                    <span style="color:#383f4a">Молодежная программа</span><br/>
+                    <span style="color:#363d47">Чолпон-Ата</span>
+                </p>
+            </div>
+            <div>
+                <img src="https://pbs.twimg.com/profile_images/1351780458275741697/aobs1EAT.jpg" alt="logo"/>
+            </div>
+            </div>
+        </nav>
+        </header>
+        <main>
+            <h4>Анкета для участника</h4>
+            <section>
+                <article class="fio">
+                    <Label>Наставник:</Label>
+                    <select name="people" id="nastavnik"">
+                        <option>Выбрать наставника</option>
+                        <option value="1">Айбек байке</option>
+                        <option value="2"">Асель эже</option>
+                        <option value="3">Алина эже</option>
+                        <option value="4">Чолпон эже</option>
+                        <option value="5">Азамат байке</option>
+                    </select>
+                </article>
+                <article class="date">
+                    <Label>Дата проведения:<br/>Место проведения:</Label>
+                    <input type="text" id="inputDateandPlace">
+                </article>
+                <article>
+                    <p>1. Что для вас было новым на сегодняшнем мероприятии?</p>
+                    <textarea name="1-question" id="1-input"></textarea>
+                </article>
+                <article>
+                    <p>2. Что было интересным?</p>
+                    <textarea id="2-input"></textarea>
+                </article>
+                <article>
+                    <p>3. Что вам не понравилось?</p>
+                    <textarea id="3-input"></textarea>
+                </article>
+                <article>
+                    <p>4. Ваше предложение,что бы вы улучшили?</p>
+                    <textarea id="4-input"></textarea>
+                </article>
+                <article class="radioSide">
+                    <p>5. Как оцените нашу работу (отметьте,что считаете нужным)</p>
+                    <article>
+                        <ul>
+                            <div><li>Плохо</li><input type="checkbox" name="chekniGlaza" id="1"/></div>
+                            <div><li>Так Себе</li><input type="checkbox" name="checkniGlaza" id="2"/></div>
+                            <div><li>Хорошо</li><input type="checkbox" name="checkniGlaza" id="3"/></div>
+                        </ul>
+                    </article>  
+                </article>
+                <article>
+                    <h3>Спасибо Вам за ответы )))</h3>
+                </article>
+                <div class="submission">
+                    <button type="button" id="btn">Сохранить</button>
+                    <button type="button" class="btnWA" id="btnWa">Отправить WhatsApp</button>
+                </div>
+            </section>
+    <script src="/assets/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script src="../assets/script.js"></script>
+</body>
+</html>
